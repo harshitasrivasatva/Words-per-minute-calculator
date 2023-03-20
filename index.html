@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="./text.js" defer></script>
+  <script type="text/javascript" src="./typespeed.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="./typespeed.css"></link>
+  <title>TypeSpeed: How fast can you type this?</title>
+  <meta name="description" content="A typing speed calculator using pure JavaScript">
+</head>
+<body>
+  <div class="container">
+    <div class="text-container">
+        <div class="boxes border" name="display" id="display" ></div>
+        <textarea  class="boxes mt" name="typing" id="type-speed-input" rows="15" cols="80"></textarea>
+    </div>
+  <table class="metrics">
+    <tr>
+      <td>Words:
+        <div class="measurements" name="word-count" id="word-count">0</div>
+      </td>
+
+      <td>
+        Errors:
+        <div class="measurements" name="error-count" id="error-count">0</div>
+
+      </td>
+      <td>
+        Mistyped Words:
+        <div class="measurements" name="mistyped-words" id="mistyped-words">0</div>
+      </td>
+    </tr>
+    <tr>
+      <td>Accuracy:
+        <div class="measurements" name="accuracy" id="accuracy">100%</div>
+      </td>
+      <td>Words Per Minute:
+        <div class="measurements" name="wpm" id="wpm">60</div>
+      </td>
+      <td>
+        Time to Completion <div class="measurements" name="typing-time" id="typing-time">(not done):</div>
+      </td>
+    </tr>
+  </table>
+  <button class="reset-button" id="newTest">Next Test</button>
+  <div class="boxes rule-box" name="instructions" id="instructions" >
+<p class="rule">RULE:</p>
+<p>Words are counted once you have moved on to the next word.
+  Errors are counted character by character within words.
+  Punctuation is counted as part of the word that precedes it.
+  Mistyped words are counted when you move on to the next word.
+  Accuracy is counted character by character.
+  Words per minute is updated each time you type, based on words completed and moved on from since you first started typing. If you stop in the middle of typing for a while, you will need to start a new test to get an accurate word per minute count.
+  Time to completion is calculated just once, only after you have typed the number of words given in that particular typing test.</p>
+  
+  </div>
+  <br>
+  </div>
+</body>
+</html>

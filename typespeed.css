@@ -1,0 +1,349 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+
+  background-color: rgb(101, 166, 252);
+  outline: 1px solid rgb(113, 173, 233);
+}
+
+body {
+  /* background-image: radial-gradient(
+    circle,
+    #ffffff,
+    #cbfbff,
+    #30ffff,
+    #00ffb9,
+    #a8eb12
+  ); */
+  /* background-image: linear-gradient(to right, #e5bdf6, #d8dede); */
+  background-color: #77aa77;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(123,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%2377aa77'/%3E%3Cstop offset='1' stop-color='%234fd'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23cf8' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23cf8' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23cf8' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23cf8' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.4'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: red; */
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.5rem;
+  /* background-color: yellow; */
+  height: 400px;
+  width: 97%;
+}
+
+.boxes {
+  padding: 5px 8px;
+  margin: 5px;
+  border: 1px solid black;
+  /* width: 628px; */
+  width: 50%;
+  background-color: white;
+  height: 90%;
+  overflow: auto;
+  overflow-y: scroll;
+  resize: none;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  line-height: 1.5;
+  box-shadow: 0 0.1rem 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+.border {
+  border: 5px solid black;
+  resize: both;
+  background: #ffd73e33;
+  border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E")
+    1;
+}
+
+.measurements {
+  display: inline;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.metrics {
+  border-collapse: separate;
+  border-spacing: 5px;
+  border: 1px solid black;
+  max-width: 800px;
+  padding: 10px 8px;
+  margin: 5px;
+  margin-top: 2rem;
+  font-family: inherit;
+  font-size: 1rem;
+  overflow: hidden;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: green; */
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 5px;
+  border: 4px inset #800000;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+tr:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.reset-button {
+  font-size: 16px;
+  background: rgb(99, 166, 243);
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  text-transform: none;
+  line-height: 0;
+  font-family: "Open Sans", sans-serif;
+  margin: 5px;
+  margin-top: 3rem;
+  cursor: pointer;
+  animation: button-animation 1.5s infinite;
+}
+
+button .reset-button {
+  all: inherit;
+}
+
+@keyframes button-animation {
+  0% {
+    transform: scale(0.95);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+}
+
+.rule-box {
+  border: 5px dotted rgb(196, 6, 154);
+  margin-top: 3rem;
+}
+
+.rule {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid green;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .text-container {
+    flex-direction: column;
+    height: 800px;
+    font-size: 0.8rem;
+  }
+
+  .boxes {
+    width: 95%;
+  }
+
+  .mt {
+    margin-top: -2.5rem;
+  }
+
+  .metrics {
+    margin-top: 3rem;
+  }
+
+  .reset-button {
+    margin-top: 3rem;
+  }
+
+  .rule-box {
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  /* body {
+    max-width: 100vw;
+  } */
+  .text-container {
+    flex-direction: column;
+    height: 800px;
+    font-size: 0.8rem;
+  }
+
+  .metrics {
+    margin-top: 3rem;
+    width: 93%;
+  }
+
+  tr {
+    flex-direction: column;
+  }
+
+  .rule-box {
+    width: 88%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .boxes {
+    width: 90%;
+  }
+}
