@@ -290,31 +290,9 @@ button .reset-button {
   margin-bottom: 1rem;
 }
 
-@media only screen and (max-width: 900px) {
-  .text-container {
-    flex-direction: column;
-    height: 800px;
-    font-size: 0.8rem;
-  }
-
+@media only screen and (max-width: 550px) {
   .boxes {
-    width: 95%;
-  }
-
-  .mt {
-    margin-top: -2.5rem;
-  }
-
-  .metrics {
-    margin-top: 3rem;
-  }
-
-  .reset-button {
-    margin-top: 3rem;
-  }
-
-  .rule-box {
-    margin-top: 3rem;
+    width: 90%;
   }
 }
 
@@ -342,8 +320,30 @@ button .reset-button {
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 900px) {
+  .text-container {
+    flex-direction: column;
+    height: 800px;
+    font-size: 0.8rem;
+  }
+
   .boxes {
-    width: 90%;
+    width: 95%;
+  }
+
+  .mt {
+    margin-top: -2.5rem;
+  }
+
+  .metrics {
+    margin-top: 3rem;
+  }
+
+  .reset-button {
+    margin-top: 3rem;
+  }
+
+  .rule-box {
+    margin-top: 3rem;
   }
 }
